@@ -51,7 +51,7 @@ Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation
 You can check to confirm that the preferred data location was updated properly by using the Get-MsolUser cmdlet. For example:
 
 ```PowerShell
-Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com.PreferredDatalocation
+(Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
 ```
 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
